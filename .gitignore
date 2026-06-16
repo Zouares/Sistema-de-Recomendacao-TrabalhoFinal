@@ -1,0 +1,36 @@
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Caches Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Dados gerados automaticamente (não versionar dados grandes)
+data/ml-latest-small/
+data/*.zip
+data/*.db
+data/*.pkl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+
+# Cobertura de testes
+.coverage
+htmlcov/
+.pytest_cache/
+arquivopdfrequisitos/

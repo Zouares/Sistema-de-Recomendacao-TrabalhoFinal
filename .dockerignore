@@ -1,0 +1,38 @@
+# Controle de versão
+.git
+.gitignore
+
+# Ambientes virtuais
+.venv
+venv
+env
+
+# Caches Python
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info
+.eggs
+
+# Ferramentas de desenvolvimento
+.vscode
+.idea
+*.swp
+*.swo
+
+# Testes (não necessário na imagem de produção)
+tests/
+
+# Arquivos gerados (serão montados via volume)
+data/ml-latest-small/
+data/recommendation.db
+data/svd_model.pkl
+data/*.zip
+
+# Documentação
+README.md
+arquivopdfrequisitos/
+
+# Logs
+*.log
