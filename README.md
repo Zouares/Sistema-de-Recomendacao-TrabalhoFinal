@@ -1,10 +1,10 @@
-# 🎬 Sistema de Recomendação de Filmes
+#  Sistema de Recomendação de Filmes
 
 > API REST para recomendação personalizada de filmes usando **Filtragem Colaborativa com SVD**, construída com **FastAPI** e containerizada com **Docker**.
 
 ---
 
-## 📖 Sobre o Projeto
+##  Sobre o Projeto
 
 Este sistema implementa um motor de recomendação de filmes baseado em **Filtragem Colaborativa** utilizando a técnica de **Decomposição em Valores Singulares (SVD — Singular Value Decomposition)**.
 
@@ -34,7 +34,7 @@ Com esses fatores, o modelo prediz a nota que um usuário daria a qualquer filme
 
 ---
 
-## 🔧 Pré-requisitos
+##  Pré-requisitos
 
 ### Para Docker (recomendado)
 - [Docker](https://docs.docker.com/get-docker/) ≥ 24.0
@@ -46,7 +46,7 @@ Com esses fatores, o modelo prediz a nota que um usuário daria a qualquer filme
 
 ---
 
-## 🐳 Como Executar com Docker
+##  Como Executar com Docker
 
 ```bash
 # Clone o repositório
@@ -57,7 +57,7 @@ cd Sistema-de-Recomendacao-TrabalhoFinal
 docker compose up --build
 ```
 
-> ⏳ **Atenção**: O primeiro startup leva alguns minutos pois baixa o dataset MovieLens (~3 MB) e treina o modelo SVD com validação cruzada 5-fold.
+>  **Atenção**: O primeiro startup leva alguns minutos pois baixa o dataset MovieLens (~3 MB) e treina o modelo SVD com validação cruzada 5-fold.
 
 A API estará disponível em:
 - **API**: http://localhost:8000
@@ -71,7 +71,7 @@ docker compose down
 
 ---
 
-## 💻 Como Executar Localmente
+##  Como Executar Localmente
 
 ```bash
 # 1. Clone e acesse o projeto
@@ -95,7 +95,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 ---
 
-## 🧪 Executando os Testes
+##  Executando os Testes
 
 ```bash
 # Ativa o ambiente virtual (se local)
@@ -110,7 +110,7 @@ pytest tests/ -v --tb=short
 
 ---
 
-## 📡 Endpoints da API
+##  Endpoints da API
 
 ### Status
 
@@ -146,7 +146,7 @@ pytest tests/ -v --tb=short
 
 ---
 
-## 💡 Exemplos de Uso
+##  Exemplos de Uso
 
 ### Criar um usuário
 
@@ -221,7 +221,7 @@ curl http://localhost:8000/recommendations/1/history
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 Sistema-de-Recomendacao-TrabalhoFinal/
@@ -255,7 +255,7 @@ Sistema-de-Recomendacao-TrabalhoFinal/
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 | Tecnologia         | Versão  | Função                                        |
 |--------------------|---------|-----------------------------------------------|
@@ -274,7 +274,7 @@ Sistema-de-Recomendacao-TrabalhoFinal/
 
 ---
 
-## 🏗️ Decisões de Design
+##  Decisões de Design
 
 ### 1. SVD como algoritmo principal
 O SVD foi escolhido pela sua robustez comprovada em competições de recomendação (ex: Netflix Prize) e pela disponibilidade em bibliotecas maduras como scikit-surprise. Ele lida bem com a esparsidade típica de matrizes de rating.
